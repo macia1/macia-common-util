@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 import java.io.IOException;
 
 /**
- * @author zengguosheng
+ * @author zenggs
  * @Date 2022/1/20 11:25
  * restfulTemplate调用链路传递
  */
