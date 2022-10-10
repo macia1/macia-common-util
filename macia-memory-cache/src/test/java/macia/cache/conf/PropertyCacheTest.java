@@ -14,8 +14,6 @@ public class PropertyCacheTest {
 
     @Test
     public void test() throws InterruptedException {
-//        String filePath = "C:\\Users\\aa\\Desktop\\chache.txt";
-//        String filePath = "D:\\ebiz\\config\\mtp\\mtpCache.properties";
         String filePath = "C:\\Users\\zengguosheng\\Desktop\\chache.txt";
         PropertyCache propertyCache = new PropertyCache(filePath);
         do {
