@@ -14,16 +14,17 @@ public class PropertyCacheTest {
 
     @Test
     public void test() throws InterruptedException {
-        String filePath = "C:\\Users\\aa\\Desktop\\chache.txt";
+//        String filePath = "C:\\Users\\aa\\Desktop\\chache.txt";
+//        String filePath = "D:\\ebiz\\config\\mtp\\mtpCache.properties";
+        String filePath = "C:\\Users\\zengguosheng\\Desktop\\chache.txt";
         PropertyCache propertyCache = new PropertyCache(filePath);
-        Properties properties = propertyCache.getProperties();
         do {
-            Thread.sleep(3000);
             for (int i = 0; i < 10; i++) {
-                String key = properties.getProperty("key"+i);
-                if (key != null && !"".equals(key)){
-                    System.out.println("key"+i+" : " + key);
-                }
+                Thread.sleep(1000);
+                String key = propertyCache.getProperties("key1");
+//                if (key != null && !"".equals(key)){
+//                    System.out.println("key"+i+" : " + key);
+//                }
             }
         }while (true);
     }
